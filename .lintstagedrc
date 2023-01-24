@@ -1,0 +1,14 @@
+{
+  "*.{js,jsx}": [
+    "./node_modules/.bin/eslint --ignore-path .gitignore --ignore-pattern '!**/.*' --ignore-pattern 'src/tempWrappers/**' --ignore-pattern '*.test.js' src --fix",
+    "git add"
+  ],
+  "*.{json}": [
+    "./node_modules/.bin/prettier --write",
+    "git add"
+  ],
+  "*.{css,less,styl,scss,sass,sss}": [
+    "./node_modules/.bin/stylelint '**/*.scss' --syntax scss --config stylelint.config.js --fix",
+    "git add"
+  ]
+}

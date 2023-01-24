@@ -1,0 +1,7 @@
+# Ignore files and directories
+
+# /node_modules/* and /bower_components/* ignored by default
+
+coverage
+
+src/tempWrappers
